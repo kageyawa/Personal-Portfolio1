@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+header {
+    background: rgba(241, 95, 95, 0.9);
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px;
+}
+.text {
+    max-width: 600px;
+}
+.image-container img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* General reset and layout settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.intro .text {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+.intro .text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.intro .image-container {
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation Section */
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navigation button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro .image-container {
+        max-width: 100%;
+    }
+
+    .navigation button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+

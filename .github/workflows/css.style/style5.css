@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #222222;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.profile-container {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+.about, .skills, .social-links {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about p, .skills ul {
+    color: #555;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #ff4c4c;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #cc0000;
+}
+
+.navigation {
+    margin: 20px;
+}
+
+.navigation button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+.navigation button:hover {
+    background-color: #555;
+}

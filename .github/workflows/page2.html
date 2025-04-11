@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="css.style/style3.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+
+
+    <header>
+        <div class="header-container">
+            <button class="back-button" onclick="goBack()">⬅ Back to Page 2</button>
+            <h1>Digital Art Gallery</h1>
+            <button class="next-button" onclick="goNext()">Next to Page 3 ➡</button>
+        </div>
+    </header>
+    
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="image/1.jpg" alt="Art Composition" onclick="openLightbox(this)"
+                alt="image/1.jpg">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="image/2.jpg" alt="Art 2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/3.jpg" alt="Art 3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/4.jpg" alt="Art 4" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/5.jpg" alt="Art 5" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/6.png" alt="Art 6" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/7.png" alt="Art 7" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/8.jpg" alt="Art 8" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/9.jpg" alt="Art 9" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/11.jpg" alt="Art 10" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/16.jpg" alt="Art 11" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="image/17.jpg" alt="Art 12" onclick="openLightbox(this)">
+            </div>
+        </section>
+    </main>
+
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "page1.html"; 
+        }
+        function goNext() {
+            window.location.href = "page3.html"; 
+        }
+    </script>
+
+</body>
+<script>
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightbox.style.display = 'block';
+      lightboxImg.src = src;
+    }
+  
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+      img.classList.remove('clicked');
+      
+    }
+  
+    
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+
+        imgElement.classList.add('1.jpg');
+      }
+    });
+  </script>
+
+<script>
+    let clickedImg = null;
+
+    function openLightbox(imgElement) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        
+        lightbox.style.display = 'block';
+        lightboxImg.src = imgElement.src;
+
+        
+        if (clickedImg) {
+            clickedImg.classList.remove('clicked');
+        }
+        imgElement.classList.add('clicked');
+        clickedImg = imgElement;
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        
+       
+        if (clickedImg) {
+            clickedImg.classList.remove('clicked');
+            clickedImg = null;
+        }
+    }
+
+    
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+
+
+</script>
+
+
+
+
+
+
+  
+</html>

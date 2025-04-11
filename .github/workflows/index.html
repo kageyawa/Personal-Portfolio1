@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ljayy Madamba</title>
+    <link rel="stylesheet" href="css.style/style2.css">
+    <link rel="stylesheet" href="page2.html">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <section class="banner">
+        <div class="content">
+            <img src="image/pfp.jpg" alt="Ljayy Madamba" class="profile-img">
+            <h1>Hi, I'm <span>Lebron James Madamba</span></h1>
+            <p class="subtitle">IT Specialist & Digital Artist</p>
+
+            <div class="info">
+                <p><i class="fas fa-envelope"></i></p><strong>Email:</strong> ljayy.madambax3@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i></p> <strong>Address:</strong> Phase 5 Package 1 Block 27 Lot 4, Bagong Silang Caloocan City, Barangay 176</p>
+                <p><i class="fas fa-phone"></i></p> <strong>Contact:</strong> +63 985 2711 939</p>
+            </div>
+
+            <a href="page1.html" class="btn">Enter Portfolio</a>
+        </div>
+    </section>
+
+    <script>
+        function navigatePage(pageNumber) {
+            const pages = ["index.html", "page2.html", "page3.html"];
+            if (pageNumber >= 1 && pageNumber <= 3) {
+                window.location.href = pages[pageNumber - 1];
+            }
+        }
+    </script>
+</body>
+</html>

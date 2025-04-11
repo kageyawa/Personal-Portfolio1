@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ljayy Madamba</title>
+    <link rel="stylesheet" href="css.style/style.css">
+    <link rel="stylesheet" href="page2.html">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Personal Background!</h1>
+    </header>
+    <section class="intro">
+        <div class="text">
+            <p>Hello, I'm <strong>Lebron James Madamba</strong>, also known as <strong>Ljayy</strong>, a 21-year-old creative with a lifelong passion for art and design.</p>
+            <p>From participating in poster-making contests as a child to studying art in college, my love for creativity has only grown stronger.</p>
+            <p>Today, I am a working student, deeply passionate about transforming creative ideas into captivating artworks.</p>
+            <p>My goal is to collaborate with brands to elevate their marketing campaigns and strategies, ensuring their messages connect meaningfully with their target audiences.</p>
+        </div>
+        <div class="image-container">
+            <img src="image/pfp.jpg" alt="Ljayy Madamba">
+        </div>
+    </section>
+
+    
+    <section class="navigation">
+        <button onclick="navigatePage(1)">Page 1</button>
+        <button onclick="navigatePage(2)">Page 2</button>
+        <button onclick="navigatePage(3)">Page 3</button>
+    </section>
+
+    <script>
+       
+        function navigatePage(pageNumber) {
+            if (pageNumber === 1) {
+                window.location.href = 'index.html';  
+            } else if (pageNumber === 2) {
+                window.location.href = 'page2.html';  
+            } else if (pageNumber === 3) {
+                window.location.href = 'page3.html';  
+            }
+        }
+    </script>
+</body>
+</html>
